@@ -55,21 +55,25 @@ docker build -t nyc-taxi-app .
 docker run -p 5000:5000 nyc-taxi-app
 ```
 
-### **Tester l'API :**
+### **Tester l'API avec Postman**
 
-- Accédez à [http://localhost:5000/](http://localhost:5000/) pour la page d'accueil.
-- Envoyez une requête POST à l'endpoint `/predict` avec un JSON contenant les caractéristiques suivantes :
+Testez l'API en utilisant Postman ou un outil similaire, en définissant la méthode comme **POST**.
 
-```json
-{
-    "features": {
-        "hour": 10,
-        "is_business_day": 1,
-        "weather_index": 2,
-        "temp_avg": 15.5,
-        "distance_category_index": 3
-    }
-}
+#### **Exemple de requête POST avec Postman :**
+
+- **Méthode** : POST  
+- **URL** : `http://localhost:5000/predict`  
+- **Corps de la requête (JSON)** :  
+  ```json
+  {
+      "features": {
+          "hour": 10,
+          "is_business_day": 1,
+          "weather_index": 2,
+          "temp_avg": 15.5,
+          "distance_category_index": 3
+      }
+  }
 ```
 
 #### **Exécuter Streamlit :**
