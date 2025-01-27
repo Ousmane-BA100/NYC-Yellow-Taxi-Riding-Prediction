@@ -1,0 +1,6 @@
+pyspark
+flask
+streamlit
+streamlit-folium
+pandas
+numpy
