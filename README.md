@@ -32,7 +32,7 @@ Le projet a été conteneurisé pour garantir une compatibilité et une portabil
 - Flask et Streamlit peuvent être exécutés à partir du conteneur selon les besoins.
 
 ### **7. Arborescence du projet**
-
+```bash
 project/
 ├── random_forest_model/       # Modèle entraîné au format MLlib
 ├── app.py                     # API Flask
@@ -40,7 +40,7 @@ project/
 ├── requirements.txt           # Dépendances Python
 ├── Dockerfile                 # Configuration Docker
 └── README.md                  # Documentation du projet
-
+```
 ### **8. Exécuter avec Docker**
 
 #### **Construire l'image Docker :**
