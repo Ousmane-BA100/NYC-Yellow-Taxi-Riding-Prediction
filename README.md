@@ -32,7 +32,7 @@ Le projet a été conteneurisé pour garantir une compatibilité et une portabil
 - Flask et Streamlit peuvent être exécutés à partir du conteneur selon les besoins.
 
 ### **7. Arborescence du projet**
-```bash
+
 project/
 ├── random_forest_model/       # Modèle entraîné au format MLlib
 ├── app.py                     # API Flask
@@ -41,15 +41,19 @@ project/
 ├── Dockerfile                 # Configuration Docker
 └── README.md                  # Documentation du projet
 
-### **Option 3 : Exécuter avec Docker**
+### **8. Exécuter avec Docker**
 
 #### **Construire l'image Docker :**
+
 ```bash
 docker build -t nyc-taxi-app .
+```
 
 #### **Exécuter Flask :**
+
 ```bash
 docker run -p 5000:5000 nyc-taxi-app
+```
 
 ### **Tester l'API :**
 
@@ -66,8 +70,9 @@ docker run -p 5000:5000 nyc-taxi-app
         "distance_category_index": 3
     }
 }
-
+```
 
 #### **Exécuter Streamlit :**
+
 ```bash
 docker run -p 8501:8501 nyc-taxi-app streamlit run /app/streamlit_app.py --server.port=8501 --server.address=0.0.0.0
