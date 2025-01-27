@@ -74,9 +74,9 @@ Testez l'API en utilisant Postman ou un outil similaire, en définissant la mét
           "distance_category_index": 3
       }
   }
-```
-
+  
 #### **Exécuter Streamlit :**
 
 ```bash
 docker run -p 8501:8501 nyc-taxi-app streamlit run /app/streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+```
